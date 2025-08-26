@@ -25,8 +25,7 @@
     <meta property="twitter:description" content="Hacemos brillar tu presencia digital con estrategias creativas, humanas y orientadas a resultados.">
     <meta property="twitter:image" content="https://placehold.co/1200x630/5722D2/FFFFFF?text=Acrux+Agencia">
     <!-- Favicon -->
-    <!-- Favicon SVG -->
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath fill='%235722D2' d='M50 2L65.09 8.26L72 9.27L67 14.14L68.18 21.02L62 17.77L55.82 21.02L57 14.14L52 9.27L58.91 8.26L50 2Z'/%3E%3C/svg%3E" />
+    <link rel="icon" href="favicon-32x32.png">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
@@ -188,7 +187,7 @@
             padding: 0 8px;
             margin-top: 0;
         }
-        .service-active .service-description {
+       .service-active .service-description {
             max-height: none;
             opacity: 1;
             margin-top: 1.5rem;
@@ -259,6 +258,9 @@
             .service-card {
                 margin-bottom: 1rem;
             }
+            .contact-info {
+                margin-top: 2rem;
+            }
             .service-description {
                 max-height: none !important;
             }
@@ -327,6 +329,28 @@
             opacity: 0.1;
             z-index: 0;
         }
+        /* Animación de scroll suave */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Botón de solicitud mejorado */
+        .service-contact-btn {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            transform-origin: center;
+        }
+        .service-contact-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(87, 34, 210, 0.4);
+        }
+        /* Animación de resaltado */
+        .highlight-contact {
+            animation: highlight 1.5s ease-in-out;
+        }
+        @keyframes highlight {
+            0% { box-shadow: 0 0 0 0 rgba(87, 34, 210, 0.4); }
+            50% { box-shadow: 0 0 0 10px rgba(87, 34, 210, 0.2); }
+            100% { box-shadow: 0 0 0 0 rgba(87, 34, 210, 0.4); }
+        }
     </style>
 </head>
 <body class="font-sans bg-black text-white overflow-x-hidden">
@@ -387,7 +411,7 @@
                     </div>
                 </div>
                 <div class="mt-8 sm:mt-12 lg:mt-0 lg:col-span-6 flex items-center justify-center fade-in animate-float">
-                    <video src="img/A_5 (1).mp4" class="w-full max-w-md lg:max-w-lg rounded-lg shadow-xl" autoplay muted loop></video>
+                    <video src="A_5 (1).mp4" class="w-full max-w-md lg:max-w-lg rounded-lg shadow-xl" autoplay muted loop></video>
                 </div>
             </div>
         </div>
@@ -509,7 +533,7 @@
                         </ul>
                         <p class="mb-3">🔎 Incluye reportes mensuales con análisis y optimización.</p>
                         <div class="mt-4">
-                            <a href="#contacto" class="inline-block bg-purple-600 hover:bg-purple-700 text-white font-medium py-2 px-4 rounded transition duration-300">
+                            <a href="#contacto" class="service-contact-btn inline-block bg-purple-600 hover:bg-purple-700 text-white font-medium py-2 px-4 rounded transition duration-300">
                                 Solicitar Información
                             </a>
                         </div>
@@ -535,7 +559,7 @@
                         </ul>
                         <p class="mb-3">📲 Nuestro foco: engagement, alcance y conversión.</p>
                         <div class="mt-4">
-                            <a href="#contacto" class="inline-block bg-purple-600 hover:bg-purple-700 text-white font-medium py-2 px-4 rounded transition duration-300">
+                            <a href="#contacto" class="service-contact-btn inline-block bg-purple-600 hover:bg-purple-700 text-white font-medium py-2 px-4 rounded transition duration-300">
                                 Solicitar Información
                             </a>
                         </div>
@@ -561,7 +585,7 @@
                         </ul>
                         <p class="mb-3">✨ Una marca fuerte inspira confianza y fideliza clientes.</p>
                         <div class="mt-4">
-                            <a href="#contacto" class="inline-block bg-purple-600 hover:bg-purple-700 text-white font-medium py-2 px-4 rounded transition duration-300">
+                            <a href="#contacto" class="service-contact-btn inline-block bg-purple-600 hover:bg-purple-700 text-white font-medium py-2 px-4 rounded transition duration-300">
                                 Solicitar Información
                             </a>
                         </div>
@@ -587,7 +611,7 @@
                         </ul>
                         <p class="mb-3">💻 Tu web, más que presencia: una herramienta de ventas.</p>
                         <div class="mt-4">
-                            <a href="#contacto" class="inline-block bg-purple-600 hover:bg-purple-700 text-white font-medium py-2 px-4 rounded transition duration-300">
+                            <a href="#contacto" class="service-contact-btn inline-block bg-purple-600 hover:bg-purple-700 text-white font-medium py-2 px-4 rounded transition duration-300">
                                 Solicitar Información
                             </a>
                         </div>
@@ -613,7 +637,7 @@
                         </ul>
                         <p class="mb-3">🎯 Contenido que inspira, emociona y convierte.</p>
                         <div class="mt-4">
-                            <a href="#contacto" class="inline-block bg-purple-600 hover:bg-purple-700 text-white font-medium py-2 px-4 rounded transition duration-300">
+                            <a href="#contacto" class="service-contact-btn inline-block bg-purple-600 hover:bg-purple-700 text-white font-medium py-2 px-4 rounded transition duration-300">
                                 Solicitar Información
                             </a>
                         </div>
@@ -639,7 +663,7 @@
                         </ul>
                         <p class="mb-3">🚀 Más tráfico, más leads, más ventas.</p>
                         <div class="mt-4">
-                            <a href="#contacto" class="inline-block bg-purple-600 hover:bg-purple-700 text-white font-medium py-2 px-4 rounded transition duration-300">
+                            <a href="#contacto" class="service-contact-btn inline-block bg-purple-600 hover:bg-purple-700 text-white font-medium py-2 px-4 rounded transition duration-300">
                                 Solicitar Información
                             </a>
                         </div>
@@ -865,12 +889,32 @@
                     activeCard = null;
                 }
             });
+            
+            // Manejo de botones de contacto
+            document.querySelectorAll('.service-contact-btn').forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    
+                    // Scroll suave al formulario de contacto
+                    const contactSection = document.getElementById('contacto');
+                    if (contactSection) {
+                        // Resaltar sección de contacto
+                        contactSection.classList.add('highlight-contact');
+                        
+                        // Scroll suave con animación
+                        contactSection.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                        
+                        // Quitar clase de resaltado después de la animación
+                        setTimeout(() => {
+                            contactSection.classList.remove('highlight-contact');
+                        }, 1500);
+                    }
+                });
+            });
         });
     </script>
 </body>
 </html>
-</html>
-
-
-
-
